@@ -54,7 +54,7 @@ const initialiseVariables = (data) => {
 };
 
 const resetDom = () => {
-    document.querySelector(".box").forEach((box) => {
+    document.querySelectorAll(".box").forEach((box) => {
         box.className = "box";
         box.textContent = "";
     });
@@ -146,8 +146,9 @@ const checkWinner = (data, player) => {
             data.board[condition[0]] === player &&
             data.board[condition[1]] === player &&
             data.board[condition[2]] === player
-        )
+        ) {
             result = true;
+        }
     });
     return result;
 };
@@ -191,7 +192,7 @@ const impossibleAIMove = (data) => {
 
     const move = minimax(data, "O").index;
     data.board[move] = data.player2;
-    let box = document.querySelector(`${move}`);
+    let box = document.getElementById(`${move}`);
     box.textContent = data.player2;
     box.classList.add("player2");
 
@@ -233,7 +234,7 @@ const minimax = (data, player) => {
         potentialMoves.push(move);
     }
 
-    let bestmove = 0;
+    let bestMove = 0;
     if (player === data.player2) {
         let bestScore = -10000;
         for (let i = 0; i < potentialMoves.length; i++) {
