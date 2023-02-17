@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Yellowtail:400"
+            rel="stylesheet"
+            type="text/css"
+        />
         <title>Tic Tac Toe</title>
     </head>
     <body>
@@ -29,82 +34,82 @@
                     <div class="box" id="8"></div>
                 </div>
             </div>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close"></span>
-                    <p class="result"></p>
-                </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <p class="result"></p>
             </div>
-            <div class="modal-wrapper">
-                <div id="initialForm" class="modal">
-                    <!--Initial Popup content-->
-                    <div class="front-content">
-                        <form id="myForm" autocomplete="off">
-                            <div class="inputField">
-                                <label class="input-label"
-                                    >(X) Player 1's name:</label
-                                >
-                                <input
-                                    type="text"
-                                    name="player1Name"
-                                    class="formClass"
-                                    id="form1"
-                                    required
-                                />
-                            </div>
-                            <div class="inputField">
-                                <label class="input-label">
-                                    (O) Player 2's name:</label
-                                >
-                                <input
-                                    type="text"
-                                    name="player2Name"
-                                    class="formClass"
-                                    id="form2"
-                                    required
-                                />
-                            </div>
-                            <div class="inputField">
-                                <label for="1v1" class="Title container"
-                                    >Human vs Human:</label
-                                >
-                                <input
-                                    type="radio"
-                                    id="1v1"
-                                    name="choice"
-                                    value="0"
-                                    required
-                                />
-                            </div>
-                            <div class="inputField">
-                                <label for="ai" class="Title"
-                                    >Human vs Easy AI:</label
-                                >
-                                <input
-                                    type="radio"
-                                    id="ai"
-                                    name="choice"
-                                    value="1"
-                                    required
-                                />
-                            </div>
-                            <div class="inputField">
-                                <label for="ai" class="Title"
-                                    >Human vs Hard AI:</label
-                                >
-                                <input
-                                    type="radio"
-                                    id="aiHard"
-                                    name="choice"
-                                    value="2"
-                                    required
-                                />
-                            </div>
-                            <div class="flex">
-                                <button class="startButton">Start Game</button>
-                            </div>
-                        </form>
-                    </div>
+        </div>
+        <div class="modal-wrapper">
+            <div id="initialForm" class="modal">
+                <!--Initial Popup content-->
+                <div class="front-content">
+                    <form id="myForm" autocomplete="off">
+                        <div class="inputField">
+                            <label class="input-label"
+                                >(X) Player 1's name:</label
+                            >
+                            <input
+                                type="text"
+                                name="player1Name"
+                                class="formClass"
+                                id="form1"
+                                required
+                            />
+                        </div>
+                        <div class="inputField">
+                            <label class="input-label">
+                                (O) Player 2's name:</label
+                            >
+                            <input
+                                type="text"
+                                name="player2Name"
+                                class="formClass"
+                                id="form2"
+                                required
+                            />
+                        </div>
+                        <div class="inputField">
+                            <label for="1v1" class="Title container"
+                                >Human vs Human:</label
+                            >
+                            <input
+                                type="radio"
+                                id="1v1"
+                                name="choice"
+                                value="0"
+                                required
+                            />
+                        </div>
+                        <div class="inputField">
+                            <label for="ai" class="Title"
+                                >Human vs Easy AI:</label
+                            >
+                            <input
+                                type="radio"
+                                id="ai"
+                                name="choice"
+                                value="1"
+                                required
+                            />
+                        </div>
+                        <div class="inputField">
+                            <label for="ai" class="Title"
+                                >Human vs Hard AI:</label
+                            >
+                            <input
+                                type="radio"
+                                id="aiHard"
+                                name="choice"
+                                value="2"
+                                required
+                            />
+                        </div>
+                        <div class="flex">
+                            <button class="startButton">Start Game</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

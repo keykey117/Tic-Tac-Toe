@@ -3,12 +3,28 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: "Yellowtail", sans-serif;
+    background-image: url(./assests/hd-wallpaper-g5492c4728_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .flex {
     display: flex;
     justify-content: center;
+}
+
+.title,
+.displayTurn,
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+        0 0 82px #5271ff, 0 0 92px #5371ff, 0 0 102px #5271ff, 0 0 151px #f271ff;
 }
 
 .title {
@@ -60,10 +76,10 @@ body {
     border-radius: 1rem;
     font-size: max(4vw, 3rem);
     display: flex;
-    align-items: cetner;
+    align-items: center;
     text-align: center;
     padding-left: 1.6vw;
-    box-shadow: 0 0 0.2rem #fff, 0 0 0.2 #fff, 0 0 2rem #bc13fe,
+    box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
         0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
     color: #fff;
     transition: all 0.2s ease-in-out;
@@ -117,7 +133,7 @@ body {
     background-color: rgba(101, 255, 191, 0.164);
     text-align: center;
     width: 100%;
-    box-shadow: 1 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: thin;
     border-radius: 20px;
     color: #fff;
